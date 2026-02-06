@@ -1,0 +1,141 @@
+.arena-container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  color: white;
+}
+
+/* Background */
+.arena-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #4c1d95, #000, #1e1b4b);
+  z-index: 0;
+}
+
+/* Floating text */
+.arena-symbols {
+  position: absolute;
+  top: 18%;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.5;
+  letter-spacing: 0.4em;
+}
+
+/* Heading */
+.arena-heading {
+  position: absolute;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.45em;
+  opacity: 0.5;
+  margin-bottom: 60px;
+  margin-left: 500px;
+  /* z-index: 2; */
+}
+
+/* Sections */
+.arena-sections {
+    margin-top: 200px;
+   display: flex;
+   gap: 35px;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 50px 0px;
+
+}
+
+/* Card */
+.arena-card {
+  width: 320px;
+  padding: 26px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(15px); 
+  border: 1px solid #a855f7;
+  box-shadow:
+    0 0 30px rgba(168, 85, 247, 0.4),
+    0 0 10px rgba(168, 85, 247, 0.2);
+  animation: cardGlow 3s infinite alternate;
+  text-align: center;
+}
+
+/* Titles */
+.arena-title {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+.arena-title.easy { color: #22c55e; }
+.arena-title.medium { color: #eab308; }
+.arena-title.hard { color: #ef4444; }
+
+/* Score */
+.arena-score {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+/* Progress bar */
+.arena-progress-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.arena-progress-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.5s ease;
+}
+
+.arena-progress-fill.easy { background: #22c55e; }
+.arena-progress-fill.medium { background: #eab308; }
+.arena-progress-fill.hard { background: #ef4444; }
+
+/* Button */
+.arena-btn {
+  padding: 14px 34px;
+  border-radius: 30px;
+  border: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.25em;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.arena-btn.easy { border: 1px solid #22c55e; }
+.arena-btn.medium { border: 1px solid #eab308; }
+.arena-btn.hard { border: 1px solid #ef4444; }
+
+/* Completed */
+.arena-complete {
+  margin-top: 20px;
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* Quote */
+.arena-quote {
+  position: relative;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .arena-heading {
+    font-size: 2.2rem;
+    letter-spacing: 0.3em;
+  }
+}

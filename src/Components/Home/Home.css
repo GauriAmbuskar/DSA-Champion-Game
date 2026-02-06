@@ -1,0 +1,133 @@
+/* =========================
+   HOME PAGE
+========================= */
+.home-container {
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+/* Animated gradient background */
+.home-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #4c1d95, #000, #1e1b4b);
+  background-size: 300% 300%;
+  animation: homeGradient 12s ease infinite;
+  z-index: 0;
+}
+
+@keyframes homeGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating DSA text */
+.home-symbols {
+  position: absolute;
+  top: 15%;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(168, 85, 247, 0.15);
+  animation: floatSymbols 6s ease-in-out infinite;
+  white-space: nowrap;
+}
+
+@keyframes floatSymbols {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+}
+
+/* Card */
+.home-card {
+  position: relative;
+  z-index: 1;
+  width: 600px;
+  padding: 50px 40px;
+  text-align: center;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+  border: 1px solid #a855f7;
+  box-shadow:
+    0 0 30px rgba(168, 85, 247, 0.4),
+    0 0 80px rgba(168, 85, 247, 0.2);
+  animation: cardGlow 3s infinite alternate;
+}
+
+@keyframes cardGlow {
+  from {
+    box-shadow:
+      0 0 25px rgba(168, 85, 247, 0.4),
+      0 0 60px rgba(168, 85, 247, 0.2);
+  }
+  to {
+    box-shadow:
+      0 0 45px rgba(168, 85, 247, 0.7),
+      0 0 120px rgba(168, 85, 247, 0.35);
+  }
+}
+
+/* Title */
+.home-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.home-subtitle {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin-bottom: 30px;
+}
+
+/* Enter Button */
+.enter-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  background: #7c3aed;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.enter-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: translateX(-100%);
+}
+
+.enter-btn:hover::after {
+  transform: translateX(100%);
+  transition: transform 0.6s ease;
+}
+
+/* Quote */
+.home-quote {
+  position: absolute;
+  bottom: 40px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  letter-spacing: 1px;
+}

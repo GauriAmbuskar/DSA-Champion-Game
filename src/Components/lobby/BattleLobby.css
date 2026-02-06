@@ -1,0 +1,40 @@
+.leaderboard {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 80px;
+  align-items: center;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  font-weight: 600;
+}
+
+.leaderboard-row.me {
+  background: rgba(167, 139, 250, 0.25);
+}
+
+.rank {
+  color: #facc15;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.score {
+  text-align: right;
+  color: #22c55e;
+}
+
+.home-card{
+    width: 600px;
+}
+
+.home-quote{
+  margin-bottom: 70px;
+}
