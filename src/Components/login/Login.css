@@ -157,3 +157,72 @@ body {
     padding: 26px 20px;
   }
 }
+
+/* ============================= */
+/*        RESPONSIVE FIX         */
+/* ============================= */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+
+  .login-card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  .login-bg {
+    margin-top: 60px;
+  }
+
+  .login-card {
+    width: 95%;
+    max-width: 380px;
+    padding: 28px 22px;
+  }
+
+  .login-card h2 {
+    font-size: 22px;
+  }
+
+}
+
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+
+  .login-bg {
+    margin-top: 50px;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
+
+  .login-card h2 {
+    font-size: 20px;
+  }
+
+  .login-card input {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .login-card button.login {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login-card p {
+    font-size: 12px;
+  }
+
+}

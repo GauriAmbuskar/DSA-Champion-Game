@@ -38,3 +38,69 @@
 .home-quote{
   margin-bottom: 70px;
 }
+
+/* ============================= */
+/*        RESPONSIVE FIX         */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .home-card {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .leaderboard-row {
+    grid-template-columns: 40px 1fr 70px;
+    padding: 10px 12px;
+  }
+
+}
+
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+
+  .home-card {
+    width: 95%;
+  }
+
+  .home-quote {
+    margin-bottom: 40px;
+  }
+
+  .leaderboard-row {
+    grid-template-columns: 35px 1fr 60px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+}
+
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+
+  .home-card {
+    width: 100%;
+  }
+
+  .leaderboard-row {
+    grid-template-columns: 30px 1fr 55px;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .rank {
+    font-size: 12px;
+  }
+
+  .score {
+    font-size: 12px;
+  }
+
+  .home-quote {
+    margin-bottom: 30px;
+  }
+}

@@ -131,3 +131,94 @@
   color: #9ca3af;
   letter-spacing: 1px;
 }
+
+/* ============================= */
+/*        RESPONSIVE FIX         */
+/* ============================= */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+
+  .home-card {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px 30px;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-symbols {
+    font-size: 2.2rem;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  .home-container {
+    padding: 20px;
+  }
+
+  .home-card {
+    width: 95%;
+    padding: 35px 25px;
+    border-radius: 24px;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .home-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .home-symbols {
+    font-size: 1.8rem;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .home-quote {
+    font-size: 0.75rem;
+    bottom: 25px;
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+
+  .home-card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .home-title {
+    font-size: 1.5rem;
+  }
+
+  .home-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .enter-btn {
+    padding: 12px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+
+  .home-symbols {
+    font-size: 1.4rem;
+  }
+
+  .home-quote {
+    font-size: 0.7rem;
+    bottom: 20px;
+  }
+}

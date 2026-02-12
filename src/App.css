@@ -156,3 +156,100 @@ nav ul {
 .player {
   color: cyan;
 }
+
+/* ============================= */
+/*        RESPONSIVE FIX         */
+/* ============================= */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+
+  .hero h1 {
+    font-size: 72px;
+    line-height: 80px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .nav,
+  .hero-btn,
+  .secondary-btn {
+    margin-right: 20px;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 0;
+    gap: 12px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .nav-right {
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .nav,
+  .hero-btn,
+  .secondary-btn {
+    margin-right: 0;
+    width: auto;
+  }
+
+  .login-btn,
+  .logout-btn {
+    margin-right: 0;
+  }
+}
+
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .nav,
+  .hero-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-btn,
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+}

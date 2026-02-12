@@ -280,3 +280,125 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+
+/* ========================= */
+/*        RESPONSIVE         */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .vs-card {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  .victory-card {
+    width: 90%;
+    max-width: 500px;
+    padding: 35px;
+  }
+
+  .vs-title {
+    font-size: 20px;
+  }
+
+  .vs-question {
+    font-size: 16px;
+  }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+  .vs-container {
+    padding: 20px;
+  }
+
+  .vs-card {
+    width: 100%;
+    padding: 25px;
+    border-radius: 16px;
+  }
+
+  .vs-title {
+    font-size: 18px;
+  }
+
+  .vs-question {
+    font-size: 15px;
+  }
+
+  .vs-option {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .vs-progress {
+    font-size: 13px;
+  }
+
+  .victory-card {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 18px;
+  }
+
+  .victory-title {
+    font-size: 28px;
+  }
+
+  .victory-sub {
+    font-size: 14px;
+  }
+
+  .victory-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .popup-card,
+  .poster-card {
+    width: 95%;
+    min-width: unset;  /* removes fixed 320px restriction */
+    padding: 20px;
+  }
+
+  .poster-btn,
+  .back-arena-btn,
+  .popup-btn {
+    width: 100%;
+  }
+}
+
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+  .vs-title {
+    font-size: 16px;
+  }
+
+  .vs-question {
+    font-size: 14px;
+  }
+
+  .vs-symbols {
+    font-size: 10px;
+  }
+
+  .victory-title {
+    font-size: 22px;
+  }
+
+  .victory-sub {
+    font-size: 13px;
+  }
+
+  .victory-symbols {
+    font-size: 18px;
+    letter-spacing: 0.5em;
+  }
+}
